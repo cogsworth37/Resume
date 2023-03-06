@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\definecolor{mygrey}{HTML}{bdbdbd}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Andy}}}}} % First name
+	
+	\colorbox{white}{{\HUGE\textcolor{black}{\textbf{\MakeUppercase{Quangvan}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge DevOps Practitioner} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.45\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Smithville, MO}\\
+	\icon{Phone}{12}{(319) 541-6905}\\
+	\icon{EnvelopeO}{12}{\href{mailto:andy.quangvan@gmail.com}{andy.quangvan@gmail.com}}\\	
+\end{minipage}
+%\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+%	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	%\icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+	%\icon{Github}{12}{\href{https://github.com/alyxvance}{github.com/alyxvance}}\\
+	%\icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+%\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{About Me - Skills}
+
+\begin{minipage}[t]{0.43\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	I am a problem solver and a change agent. 
+	I improve processes to those that make sense instead of settling for doing things the way it's always been done. I am an avid learner and a people enabler.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{JavaScript}{20}
+		\baritem{Python}{75}
+		\baritem{Go}{70}
+		\baritem{Azure}{90}
+		\baritem{AWS}{90}
+		\baritem{DevOps}{85}
+		\baritem{SRE}{85}
+		\baritem{SecOps}{60}
+		\baritem{CSharp}{40}
+	\end{barchart}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2021 -- present}
+		{Lead Site Reliability Engineer}
+		{H\&R Block}
+		{Created an observability platform that helped teams acheive reliability \\
+		Helped teams refactor code to increase observability for workflows \\
+		Introduced more robust health checks that didn't simply "return 200" \\
+		Created dashboards and workbooks that allowed dev teams to see the reliability of their applications \\
+		Worked on dockerizing applications and introducing Kubernetes \\
+		Architected a way for teams to stabilize their Monitoring platform (Grafana/Prometheus)\\
+		Created a standardized practice for reliability in Eventing Platforms \\
+		Implemented unit testing by writing and training on Unit Test Principals \\
+		Established scaling profiles to cut costs and improve reliability \\
+		Migrated teams from on-prem to the cloud \\
+		\texttt{Azure}\slashsep\texttt{DevOps}\slashsep\texttt{SRE}\slashsep\texttt{Kubernetes}\slashsep\texttt{Docker}\slashsep\texttt{CSharp}}
+	\entry
+		{2021 -- 2021}
+		{Information Security Cloud Architect}
+		{Garmin}
+		{Helped Garmin create a strategy that would secure their public cloud presence\\ 
+		Create a strategy to onboard new acquisitions \\
+		Helped choose and implement their CSPM \\
+		Helped create an IAM process for the cloud to start utilizing RBAC \\
+		\texttt{Azure}\slashsep\texttt{Architecture}\slashsep\texttt{CSPM}}
+	\entry
+		{2019 -- 2021}
+		{IT Operations Manager}
+		{H\&R Block}
+		{Introduced new technologies to development teams e.g. Scale Sets, configuration management, Packer \\
+		Created processes in which new technologies should be adapted by highlighting Architectural patterns and common pitfalls \\
+		Worked with Engineering teams to implement new technologies \\
+		Created platforms that the engineers could interact with through their pipelines \\
+		Worked with developers to help them think about their apps in Cloud-Centric ways e.g. Database connection pooling and retry logic \\
+		Worked with operations to think about managing infrastructure in Cloud-Centric ways. e.g. Terraform, Chef, Ansible \\
+		Automated manual procedures to move faster e.g.Infrastructure as code, Adding users to groups \\
+		Helped define culture to move the company forward faster e.g. Fail fast, cloud first, agile, blameless post mortems \\
+		Increased observability by implementing monitoring as a platform\\
+		Increased responsiveness to the incident management process\\
+		Created automation to help facilitate business processes\\ 
+		\texttt{Azure}\slashsep\texttt{DevOps}\slashsep\texttt{SRE}\slashsep\texttt{Leadership}}
+	\entry
+		{2017 -- 2019}
+		{Senior Engineering Manager}
+		{Rx Savings Solutions}
+		{Managed entire AWS Infrastructure \\
+		Created a CI/CD Pipeline \\
+		Lead a team of System Engineers \\
+		Converted System Engineers to Site Reliability Engineers \\
+		Created security policies to help increase Cyber Defense \\
+		Implemented Cyber Security applications including DLP and EDR \\
+		Created Change Management policies \\
+		Implemented Docker Containers\\ 
+		\texttt{Docker}\slashsep\texttt{SRE}\slashsep\texttt{Leadership}\slashsep\texttt{AWS}}
+	\entry
+		{2014 -- 2017}
+		{System Architect}
+		{Cerner}
+		{Automated workflows to be more efficient \\
+		 Wrote ruby scripts to interact against REST api’s \\
+		 Wrote Chef cookbooks to automate deployments \\
+		Implemented Rundeck to automate deployment steps \\
+		Managed a Big Data cluster using Cloudera Hadoop \\
+		Managed the cloud infrastructure \\
+		Worked with our Development team to improve operations \\
+		Wrote scripts to measure metrics to better monitor systems and applications \\
+		\texttt{Linux}\slashsep\texttt{Chef}\slashsep\texttt{Ruby}}
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{August 2019}
+		{Master's Degree, Information Technology}
+		{Southern New Hampsire University}
+		{}
+	\entry
+		{October 2011}
+		{Bachelor's Degree, Computer Network Management}
+		{Westwood College}
+		{}
+\end{entrylist}
+
+\end{document}
